@@ -6,7 +6,7 @@ const MainFeed = () => {
   return (
     <div className="mainfeed--wrapper">
   <div className="row">
-    <div className="rightcolumn">
+    <div className="column--right">
       <div className="card">
         <h3>Popular Post</h3>
         <div className="fakeimg">Image</div>

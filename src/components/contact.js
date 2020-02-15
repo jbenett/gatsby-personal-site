@@ -6,10 +6,10 @@ const MainFeed = () => {
   return (
     <div className="mainfeed--wrapper">
   <div className="row">
-    <div className="leftcolumn">
-      
+    <div className="column--left">
+
     </div>
-    <div className="rightcolumn">
+    <div className="column--right">
       <div className="card">
         <h2>About Me</h2>
         <div className="fakeimg" style={{ height: 100 }}>

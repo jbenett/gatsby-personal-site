@@ -139,43 +139,91 @@ padding-top: 42px;
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {
+.column--left {
   float: left;
   width: 75%;
 }
 
 /* Right column */
-.rightcolumn {
+.column--right {
   float: left;
   width: 25%;
   padding-left: 20px;
 }
 
-/* Fake image */
 .fakeimg {
   background-color: #aaa;
   width: 100%;
   padding: 20px;
 }
 
-/* Add a card effect for articles */
 .card {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+.hamburger--wrapper {
+  display: none;
+}
+
+.navbar--tab-wrapper {
+  display: flex;
+}
+
+/* Responsive navbar */
+@media screen and (max-width: 1000px) {
+  .nav--link {
+    display: none;
+  }
+
+  .hamburger--wrapper {
+    display: flex;
+  }
+}
+
+/* Responsive column adjustment to make them stack */
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
+  .column--left, .column--right {
     width: 100%;
     padding: 0;
   }
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+
+  text-decoration: none;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  font-size: 24px;
+  display: block;
+  padding: 0px 20px;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
