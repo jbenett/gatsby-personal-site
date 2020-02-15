@@ -24,16 +24,7 @@ const MainFeed = () => {
         <p>Some text..</p>
       </div>
     </div>
-    <div className="rightcolumn">
-      <div className="card">
-        <h3>Popular Post</h3>
-        <div className="fakeimg">Image</div>
-        <br />
-        <div className="fakeimg">Image</div>
-        <br />
-        <div className="fakeimg">Image</div>
-      </div>
-    </div>
+
   </div>
 </div>
 

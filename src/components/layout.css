@@ -15,7 +15,6 @@ body {
 }
 
 footer {
-  position: absolute;
   bottom: 20px;
   width: 100%;
 }
@@ -47,7 +46,7 @@ header a {
   flex-grow: 1;
   text-align: center;
   vertical-align: middle;
-  line-height: 64px;
+  line-height: 64px;-*
   font-size: 14px;
   font-weight: 700;
   border-left: 5px solid transparent;
@@ -98,6 +97,7 @@ padding-top: 42px;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
+
 }
 
 .contactcard--content {
@@ -130,4 +130,52 @@ padding-top: 42px;
   font-size: 10px;
   color: #808080;
   margin-top: 25px;
+}
+
+.mainfeed--wrapper {
+  height: 100%;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
