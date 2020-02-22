@@ -1,12 +1,31 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 
+
+
 const Navbar = () => {
+  const [isTop, setIsTop] = useState(true)
+
+  useEffect(() => {
+    document.addEventListener('scroll', () => {
+      const top = window.scrollY < 300;
+      console.log(isTop);
+      if (top !== true) {
+        setIsTop(false);
+      }
+    });
+  }, []);
+
+  const handleScrollChange = () => {
+    setIsTop();
+  }
+
   return (
     <div
       style={{
         display: `flex`,
       }}
+      className = {isTop ? "navbar" : "navbar--hidden"}
     >
       <Link to="#" className="nav--link">&lt; Jack Lenzotti /&gt;</Link>
       <Link to="/page-2/" className="nav--link">&lt; Blog /&gt;</Link>
