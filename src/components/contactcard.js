@@ -5,15 +5,16 @@ import Image from "./image.js"
 const ContactCard = () => {
   return (
     <div className="contactcard--wrapper">
-      <div className="contactcard--content">
-        <a href="https://placeholder.com"><img src="https://via.placeholder.com/100x120"></img></a>
-        <div className="contactcard--text">
-          <h2>A bit more about me</h2>
-          <p>Age: 22</p>
-          <p>Address: http://localhost:8000/</p>
-          <p>Definitely not a designer</p>
-        </div>
-      </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <div className="contactcard--content">
+      <a href="#" className="fa fa-linkedin"></a>
+      <a href="#" className="fa fa-github"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-snapchat-ghost"></a>
+    </div>
     </div>
   )
 }

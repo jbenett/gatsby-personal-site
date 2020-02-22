@@ -41,6 +41,7 @@ header {
   position: fixed;
   width: 100%;
 }
+
 header a {
   flex: 1 0 0;
   flex-grow: 1;
@@ -90,38 +91,46 @@ padding-top: 42px;
 }
 
 .contactcard--wrapper {
-  height: 120px;
-}
-
-.contactcard--wrapper img {
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-
+  margin: auto;
+  text-align: center;
+  width: 100%;
 }
 
 .contactcard--content {
-  margin: 0 auto;
+  font-size: 24px;
+}
+
+.contactcard--content a {
+  margin-right: 30px;
+}
+
+.contactcard--content a:last-of-type {
+  margin-right: 0;
+}
+
+.contactcard--content {
   height: 100%;
-  width: 50%;
-  min-width: 350px;
-  max-width: 500px;
-  padding: 10px;
-  background: #7C7A7A;
-	border-radius: 12px;
 }
 
-.contactcard--content h2{
-  margin: 0;
+.fa-linkedin {
+  background: black;
+  color: white;
 }
 
-.contactcard--content p{
-  margin: 3px 0;
+.fa-github {
+  background: black;
+  color: white;
 }
 
-.contactcard--text {
-  display: inline;
-  color: #FFFFFF;
+.fa-snapchat-ghost {
+  background: black;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
 }
 
 .copyright--wrapper {
@@ -178,7 +187,7 @@ padding-top: 42px;
 }
 
 /* Responsive navbar */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .nav--link {
     display: none;
   }
