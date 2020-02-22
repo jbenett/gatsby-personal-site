@@ -8,7 +8,7 @@ const Navbar = () => {
 
   useEffect(() => {
     document.addEventListener('scroll', () => {
-      const top = window.scrollY < 300;
+      const top = window.scrollY < 400;
       console.log(isTop);
       if (top !== true) {
         setIsTop(false);
@@ -19,10 +19,6 @@ const Navbar = () => {
     });
   }, []);
 
-  const handleScrollChange = () => {
-    setIsTop();
-  }
-
   return (
     <div
       style={{
@@ -31,8 +27,8 @@ const Navbar = () => {
       className = {isTop ? "navbar" : "navbar--hidden"}
     >
       <Link to="#" className="nav--link">&lt; Jack Lenzotti /&gt;</Link>
-      <Link to="/page-2/" className="nav--link">&lt; Blog /&gt;</Link>
-      <Link to="/page-3/" className="nav--link">&lt; My Favorites /&gt;</Link>
+      <Link to="/blog/" className="nav--link">&lt; Blog /&gt;</Link>
+      <Link to="/favorites/" className="nav--link">&lt; My Favorites /&gt;</Link>
       <Link to="/contact/" className="nav--link">&lt; Contact /&gt;</Link>
       <div className="hamburger--wrapper">
       <div>
@@ -50,8 +46,8 @@ const Navbar = () => {
           {/* Navigation links (hidden by default) */}
           <div id="myLinks">
             <Link to="/#/" className="nav--link">&lt; Home /&gt;</Link>
-            <Link to="/page-2/" className="nav--link">&lt; Blog /&gt;</Link>
-            <Link to="/page-3/" className="nav--link">&lt; My Favorites /&gt;</Link>
+            <Link to="/blog/" className="nav--link">&lt; Blog /&gt;</Link>
+            <Link to="/favorites/" className="nav--link">&lt; My Favorites /&gt;</Link>
             <Link to="/contact/" className="nav--link">&lt; Contact /&gt;</Link>
           </div>
         </div>

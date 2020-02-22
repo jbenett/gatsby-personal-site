@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-import Post from "./post"
 
 const MainFeed = () => {
   return (
