@@ -13,6 +13,9 @@ const Navbar = () => {
       if (top !== true) {
         setIsTop(false);
       }
+      else{
+        setIsTop(true);
+      }
     });
   }, []);
 
